@@ -19,7 +19,7 @@ const { state, getters, dispatch } = useStore();
 
 function maybeUpgrade(upgrade) {
   if (getters.canUpgrade(upgrade)) {
-    dispatch(BUY_UPGRADE, upgrade);
+    dispatch(BUY_UPGRADE, { upgrade });
   }
 }
 </script>

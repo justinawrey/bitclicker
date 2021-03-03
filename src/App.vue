@@ -6,23 +6,17 @@
     </div>
     <Upgrades />
   </header>
+  <Inventory />
+
+  <SideEffects />
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-import { useStore } from "vuex";
-
-import "./main.css";
-import { START_COUNTER } from "./store";
 import Counter from "./components/Counter.vue";
 import Upgrades from "./components/Upgrades.vue";
 import Bits from "./components/Bits.vue";
-
-const store = useStore();
-
-onMounted(() => {
-  store.dispatch(START_COUNTER);
-});
+import Inventory from "./components/Inventory.vue";
+import SideEffects from "./components/SideEffects.vue";
 </script>
 
 <style scoped>

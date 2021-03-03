@@ -5,6 +5,7 @@
 <script setup>
 import { ref, onUnmounted, computed, watch } from "vue";
 import { useStore } from "vuex";
+
 const { state } = useStore();
 
 const bits = ref("");
